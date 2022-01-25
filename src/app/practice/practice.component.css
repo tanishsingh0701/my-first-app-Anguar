@@ -1,0 +1,7 @@
+.container
+{
+    border: radius 2;
+    color: black;
+    border-width: 1px;
+    border-style: inset;
+}
