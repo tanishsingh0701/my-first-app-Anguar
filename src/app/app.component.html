@@ -10,6 +10,15 @@
 <app-success-alert></app-success-alert>
 <hr>
 <app-warning-alert></app-warning-alert>
+
+<!-- <button class="btn btn-primary" (click)="showSecret=!showSecret">Display Details</button> -->
+<button class="btn btn-primary" (click)="onClickButton()">Display Details</button>
+<p *ngIf="showSecret">Secret password tuna</p>
+<div 
+*ngFor="let logItem of log; let i= index"
+[ngStyle]="{backgroundColor: i>=4?'blue':'tranparent'} "
+[ngClass]="{'white-text':i>=4}"
+>{{logItem}}</div>
     </div>
   </div>
 </div>
