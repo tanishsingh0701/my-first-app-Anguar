@@ -12,5 +12,17 @@ import { Component } from '@angular/core';
   `]
 })
 export class AppComponent {
+  showSecret=false;
+  log=[];
+  str="";
+  logValue=0;
   title = 'my-first-app';
+
+  onClickButton()
+  {
+    
+    // this.log.push(this.log.length+1);
+    this.log.push(new Date());
+    this.showSecret=!this.showSecret; 
+  }
 }
